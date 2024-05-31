@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.flip-container {
+    perspective: 1000px;
+  }
+  
+  .flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-container:hover .flipper {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+
+  /* App.css or index.css */
+.feature-slider .slick-list {
+  background-color: #f3f4f6; /* Light gray background color */
+}
+
+.feature-slider .slick-dots li button:before {
+  color: #6b7280; /* Gray color for slider dots */
+}

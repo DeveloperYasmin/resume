@@ -10,7 +10,7 @@ import ImageUpload from './components/ImageUpload';
 
 const App = () => {
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="text-white min-h-screen">
       <NavBar />
       <HeroSection />
       <FeaturesSection />
